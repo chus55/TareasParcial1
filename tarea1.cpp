@@ -109,3 +109,47 @@ void Tarea1::on_botonRead_clicked()
                        //cout<<nombre<<num<<endl;
                     }
 }
+
+void Tarea1::on_botonBuscar_clicked()
+{
+    scene->clear();
+    int ncuenta = ui->NumeroDeCuenta->text().toInt();
+
+    string nameFile = "ArchivoAutomatico";
+            ifstream in(nameFile.c_str(),ios::ate | ios::binary);
+            streampos fin = in.tellg();
+            in.seekg(0,ios::beg);
+            int posY = 0;
+            int posX = 0;
+                    while(in.tellg()<fin)
+                    {
+                       int num;
+                       char name[8];
+                       char car[9];
+                       char fec[7];
+                       char uni[13];
+                       in.read((char*)&num,sizeof(num));
+                       in.read(name,sizeof(name));
+                       in.read(car,sizeof(car));
+                       in.read(fec,sizeof(fec));
+                       in.read(uni,sizeof(uni));
+                       string nombre(name);
+                       string carrera(car);
+                       string fecha(fec);
+                       string universidad(uni);
+                       if(num==ncuenta)
+                       {
+                           scene->addText(QString::number(num))->setPos(posX,posY);
+                           posX+=50;
+                           scene->addText(nombre.c_str())->setPos(posX,posY);
+                           posX+=100;
+                           scene->addText(carrera.c_str())->setPos(posX,posY);
+                           posX+=100;
+                           scene->addText(fecha.c_str())->setPos(posX,posY);
+                           posX+=100;
+                           scene->addText(universidad.c_str())->setPos(posX,posY);
+                           posY+=25;
+                           posX=0;
+                       }
+                    }
+}

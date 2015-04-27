@@ -20,6 +20,8 @@ private slots:
 
     void on_botonRead_clicked();
 
+    void on_botonBuscar_clicked();
+
 private:
     Ui::Tarea1 *ui;
     QGraphicsScene *scene;
