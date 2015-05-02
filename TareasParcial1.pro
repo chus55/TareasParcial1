@@ -14,10 +14,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    tarea1.cpp
+    tarea1.cpp \
+    tarea2.cpp \
+    tarea2_agregar.cpp
 
 HEADERS  += mainwindow.h \
-    tarea1.h
+    tarea1.h \
+    tarea2.h \
+    tarea2_agregar.h
 
 FORMS    += mainwindow.ui \
-    tarea1.ui
+    tarea1.ui \
+    tarea2.ui \
+    tarea2_agregar.ui

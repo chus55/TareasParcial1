@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QMainWindow>
 #include "tarea1.h"
+#include "tarea2.h"
 
 namespace Ui {
 class MainWindow;
@@ -21,9 +22,12 @@ public:
 private slots:
     void on_T1_clicked();
 
+    void on_T2_clicked();
+
 private:
     Ui::MainWindow *ui;
     Tarea1* Tar1;
+    tarea2* Tar2;
 };
 
 #endif // MAINWINDOW_H

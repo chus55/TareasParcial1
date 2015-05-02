@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     Tar1 = new Tarea1();
+    Tar2 = new tarea2();
 
 }
 
@@ -18,4 +19,9 @@ MainWindow::~MainWindow()
 void MainWindow::on_T1_clicked()
 {
     Tar1->show();
+}
+
+void MainWindow::on_T2_clicked()
+{
+    Tar2->show();
 }

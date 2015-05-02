@@ -27,6 +27,19 @@
      <string>Tarea 1</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="T2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tarea 2</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

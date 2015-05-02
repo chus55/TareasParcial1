@@ -108,6 +108,7 @@ void Tarea1::on_botonRead_clicked()
                        posX=0;
                        //cout<<nombre<<num<<endl;
                     }
+                    in.close();
 }
 
 void Tarea1::on_botonBuscar_clicked()
@@ -152,4 +153,5 @@ void Tarea1::on_botonBuscar_clicked()
                            posX=0;
                        }
                     }
+                    in.close();
 }
