@@ -16,14 +16,17 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     tarea1.cpp \
     tarea2.cpp \
-    tarea2_agregar.cpp
+    tarea2_agregar.cpp \
+    tarea3.cpp
 
 HEADERS  += mainwindow.h \
     tarea1.h \
     tarea2.h \
-    tarea2_agregar.h
+    tarea2_agregar.h \
+    tarea3.h
 
 FORMS    += mainwindow.ui \
     tarea1.ui \
     tarea2.ui \
-    tarea2_agregar.ui
+    tarea2_agregar.ui \
+    tarea3.ui

@@ -6,6 +6,7 @@
 #include <QMainWindow>
 #include "tarea1.h"
 #include "tarea2.h"
+#include "tarea3.h"
 
 namespace Ui {
 class MainWindow;
@@ -24,10 +25,13 @@ private slots:
 
     void on_T2_clicked();
 
+    void on_T3_clicked();
+
 private:
     Ui::MainWindow *ui;
     Tarea1* Tar1;
     tarea2* Tar2;
+    tarea3* Tar3;
 };
 
 #endif // MAINWINDOW_H
